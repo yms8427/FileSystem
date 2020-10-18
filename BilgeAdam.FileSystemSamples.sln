@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.FileSystemSamples", "BilgeAdam.FileSystemSamples\BilgeAdam.FileSystemSamples.csproj", "{C1A5343B-6CA2-43B3-B2F4-194FB4BFEADC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1A5343B-6CA2-43B3-B2F4-194FB4BFEADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1A5343B-6CA2-43B3-B2F4-194FB4BFEADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1A5343B-6CA2-43B3-B2F4-194FB4BFEADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1A5343B-6CA2-43B3-B2F4-194FB4BFEADC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3895A87E-7AE3-4C89-B6E8-73E7D277E3A1}
+	EndGlobalSection
+EndGlobal
