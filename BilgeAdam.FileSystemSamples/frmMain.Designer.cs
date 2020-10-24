@@ -55,6 +55,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.ofd = new System.Windows.Forms.OpenFileDialog();
             this.pibPhoto = new System.Windows.Forms.PictureBox();
+            this.pgr = new System.Windows.Forms.PropertyGrid();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pibPhoto)).BeginInit();
             this.SuspendLayout();
@@ -209,6 +210,7 @@
             this.btnFileRemove.TabIndex = 4;
             this.btnFileRemove.Text = "Dosya Sil";
             this.btnFileRemove.UseVisualStyleBackColor = true;
+            this.btnFileRemove.Click += new System.EventHandler(this.btnFileRemove_Click);
             // 
             // button3
             // 
@@ -218,6 +220,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "Dosya Özellikleri";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btnFileRead
             // 
@@ -288,18 +291,26 @@
             // 
             // pibPhoto
             // 
-            this.pibPhoto.Location = new System.Drawing.Point(311, 296);
+            this.pibPhoto.Location = new System.Drawing.Point(12, 301);
             this.pibPhoto.Name = "pibPhoto";
             this.pibPhoto.Size = new System.Drawing.Size(226, 146);
             this.pibPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pibPhoto.TabIndex = 6;
             this.pibPhoto.TabStop = false;
             // 
+            // pgr
+            // 
+            this.pgr.Location = new System.Drawing.Point(311, 281);
+            this.pgr.Name = "pgr";
+            this.pgr.Size = new System.Drawing.Size(226, 254);
+            this.pgr.TabIndex = 7;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 508);
+            this.ClientSize = new System.Drawing.Size(560, 547);
+            this.Controls.Add(this.pgr);
             this.Controls.Add(this.pibPhoto);
             this.Controls.Add(this.txtContent);
             this.Controls.Add(this.txtFileName);
@@ -359,6 +370,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.OpenFileDialog ofd;
         private System.Windows.Forms.PictureBox pibPhoto;
+        private System.Windows.Forms.PropertyGrid pgr;
     }
 }
 

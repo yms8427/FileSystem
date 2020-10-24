@@ -89,5 +89,32 @@ namespace BilgeAdam.FileSystemSamples
                 pibPhoto.ImageLocation = ofd.FileName;
             }
         }
+
+        private void btnFileRemove_Click(object sender, EventArgs e)
+        {
+            var path = Path.Combine(txtParameter.Text, txtFileName.Text);
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ofd.FileName = "";
+            var result = ofd.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                var info = new FileInfo(ofd.FileName);
+                var mapped = new FileInformation
+                {
+                    Name = info.Name,
+                    Path = info.FullName,
+                    Extension = info.Extension,
+                    SizeInBytes = info.Length
+                };
+                pgr.SelectedObject = mapped;
+            }
+        }
     }
 }
